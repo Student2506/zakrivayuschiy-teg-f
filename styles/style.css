@@ -16,6 +16,8 @@
   font-family: var(--main-font-family, sans-serif);
   background-image: var(--background-color);
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -39,11 +41,23 @@
 
 .hero__subtitle {
   font-size: 23px;
+}
 
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  justify-items: center;
 }
 
 .card {
   width: var(--card-width);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-title {
+  
 }
 
 @supports (font-variation-settings: 'wght' 410) {
