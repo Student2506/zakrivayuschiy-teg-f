@@ -14,3 +14,12 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+@supports (font-variation-settings: 'wght' 419) {
+
+  main {
+    font-family: Inter, serif;
+    font-variation-settings: 'wght' 419;
+  }
+
+}
