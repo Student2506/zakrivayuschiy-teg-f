@@ -1,0 +1,29 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"**/*.css\"",
+    "lintFix": "stylelint \"**/*.css\" --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintFix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Student2506/zakrivayuschiy-teg-f.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Student2506/zakrivayuschiy-teg-f/issues"
+  },
+  "homepage": "https://github.com/Student2506/zakrivayuschiy-teg-f#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1"
+  }
+}
