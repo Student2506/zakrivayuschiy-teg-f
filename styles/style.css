@@ -13,13 +13,42 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font-family, sans-serif);
+  background-image: var(--background-color);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-@supports (font-variation-settings: 'wght' 419) {
+.header {
+  width: var(--card-width);
+  min-height: 368px;
+  background-color: #fff;
+  margin: 100px auto;
+  font-family: var(--accent-font-family);
+  text-transform: uppercase;
+  padding: 130px 0;
+  text-align: center;
+  border: 2px solid #000;
+}
 
-  main {
-    font-family: Inter, serif;
-    font-variation-settings: 'wght' 419;
+.hero {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.hero__subtitle {
+  font-size: 23px;
+
+}
+
+.card {
+  width: var(--card-width);
+}
+
+@supports (font-variation-settings: 'wght' 410) {
+
+  .page {
+    font-variation-settings: 'wght' var(--main-font-weight);
   }
-
 }
