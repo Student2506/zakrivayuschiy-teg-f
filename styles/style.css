@@ -20,18 +20,19 @@
   background-attachment: fixed;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 95px;
 }
 
 .header {
   width: var(--card-width);
   min-height: 368px;
-  background-color: #fff;
-  margin: 100px auto;
+  background-color: var(--card-background-color);
+  margin: 100px auto 0;
   font-family: var(--accent-font-family);
   text-transform: uppercase;
   padding: 130px 0;
   text-align: center;
-  border: 2px solid #000;
+  border: 2px solid var(--card-color);
 }
 
 .hero {
@@ -46,7 +47,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 50px;
+  gap: 51px;
   justify-items: center;
 }
 
@@ -54,15 +55,77 @@
   width: var(--card-width);
   display: grid;
   grid-template-columns: 1fr;
+  background-color: var(--card-background-color);
+  border: 2px solid var(--card-color);
+  overflow: hidden;
 }
 
 .card-title {
-  
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.card-image {
+  aspect-ratio: 1 / 1;
+  object-position: calc(100% + 13px) 3px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  scale: 1.01;
+}
+
+.card-text {
+  font-size: 18px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+  padding-bottom: 0;
+}
+
+.card-footer {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  padding: 23px 25px;
+  background-color: var(--card-background-color);
+}
+
+.heart-button {
+  padding-right: 8px;
+  justify-self: right;
+  width: fit-content;
+  display: inline-block;
+  border: none;
+  background-color: var(--card-background-color);
+}
+
+.heart {
+  width: 36px;
+}
+
+.like {
+  width: 130px;
+  border: 2px solid var(--card-color);
+  background-color: var(--card-background-color);
+  font-family: var(--accent-font-family, sans-serif);
+  font-weight: var(--main-font-weight);
+  line-height: 0.9;
+  letter-spacing: 0;
+  padding: 0;
+  font-size: 14px;
 }
 
 @supports (font-variation-settings: 'wght' 410) {
 
   .page {
+    font-variation-settings: 'wght' var(--main-font-weight);
+  }
+
+  .card-title {
+    font-variation-settings: 'wght' var(--title-font-weight);
+  }
+
+  .card-text {
     font-variation-settings: 'wght' var(--main-font-weight);
   }
 }
