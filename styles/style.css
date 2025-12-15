@@ -175,7 +175,6 @@
   backdrop-filter: brightness(0.25);
 }
 
-
 @supports (font-variation-settings: 'wght' 410) {
 
   .page {
