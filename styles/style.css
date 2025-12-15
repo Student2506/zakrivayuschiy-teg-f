@@ -175,7 +175,6 @@
   backdrop-filter: brightness(0.25);
 }
 
-
 .filter-twice-bright {
   filter: brightness(200%);
 }
@@ -205,7 +204,7 @@
 }
 
 .filter-saturate {
-  filter: saturate(130%)
+  filter: saturate(130%);
 }
 
 .filter-sepia {
