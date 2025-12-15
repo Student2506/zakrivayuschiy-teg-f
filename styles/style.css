@@ -175,6 +175,47 @@
   backdrop-filter: brightness(0.25);
 }
 
+
+.filter-twice-bright {
+  filter: brightness(200%);
+}
+
+.filter-half-bright {
+  filter: brightness(50%);
+}
+
+.filter-low-contrast {
+  filter: contrast(20%);
+}
+
+.filter-high-contrast {
+  filter: contrast(160%);
+}
+
+.filter-blur {
+  filter: blur(3.2rem);
+}
+
+.filter-transparent {
+  filter: opacity(0.7);
+}
+
+.filter-grey {
+  filter: grayscale(0.8);
+}
+
+.filter-saturate {
+  filter: saturate(130%)
+}
+
+.filter-sepia {
+  filter: sepia(80%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(-90deg);
+}
+
 @supports (font-variation-settings: 'wght' 410) {
 
   .page {
