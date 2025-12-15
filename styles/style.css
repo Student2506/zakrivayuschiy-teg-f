@@ -138,6 +138,43 @@
   width: 21px;
 }
 
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  height: 191px;
+  width: 384.5px;
+  padding: 28px 30px;
+  gap: 30px;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+}
+
+.dialog__header {
+  display: flex;
+  gap: 17px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.dialog__header_icon {
+  width: 39px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.dialog__header_text {
+  padding-inline-end: 25px;
+}
+
+.dialog__button {
+  padding: 9px 17px;
+  background-color: var(--card-background-color);
+}
+
+.dialog[open]::backdrop {
+  backdrop-filter: brightness(0.25);
+}
+
 
 @supports (font-variation-settings: 'wght' 410) {
 
