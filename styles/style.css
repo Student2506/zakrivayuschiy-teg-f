@@ -215,6 +215,10 @@
   filter: hue-rotate(-90deg);
 }
 
+.filter-hue-rotate-low-contrast {
+  filter: hue-rotate(-90deg) contrast(20%);
+}
+
 @supports (font-variation-settings: 'wght' 410) {
 
   .page {
