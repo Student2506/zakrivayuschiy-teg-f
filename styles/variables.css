@@ -16,4 +16,6 @@
   --header-horizontal-padding: clamp(1rem, 9.953vw - 1.333rem, 7.625rem);
   --card-background-color: #fff;
   --card-color: #000;
+  --card-color-rgb: 0, 0, 0;
+  --card-background-color-rgb: 255, 255, 255;
 }
