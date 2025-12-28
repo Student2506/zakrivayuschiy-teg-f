@@ -19,5 +19,10 @@
   --card-color: #000;
   --card-color-rgb: 0, 0, 0;
   --card-background-color-rgb: 255, 255, 255;
-
+  --heart-contour-color: #000;
+  --animation-fill-color: red;
+  --contour-color: var(--animation-fill-color);
+  --sparks-opacity: 0;
+  --heart-core-color: transparent;
+  --heart-main-body-color: transparent;
 }
