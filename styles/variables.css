@@ -22,6 +22,7 @@
   --heart-contour-color: #000;
   --animation-fill-color: red;
   --contour-color: var(--animation-fill-color);
+  --sparks-color: var(--animation-fill-color);
   --sparks-opacity: 0;
   --heart-core-color: transparent;
   --heart-main-body-color: transparent;

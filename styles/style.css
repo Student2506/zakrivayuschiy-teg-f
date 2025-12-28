@@ -138,12 +138,9 @@
   transition: outline 0.3s ease;
 }
 
-.sparks {
-  opacity: var(--sparks-opacity, 1);
-}
-
 .contour {
   transition: fill 0.1s linear;
+  fill: var(--heart-contour-color);
 }
 
 .main-body,
@@ -176,6 +173,34 @@
 
 .like-icon:hover .main-body {
   transition-delay: 0.05s;
+}
+
+.like-icon.is-liked {
+  --heart-core-color: var(--animation-fill-color);
+  --heart-main-body-color: var(--animation-fill-color);
+  --heart-contour-color: var(--animation-fill-color);
+}
+
+.like-icon.is-liked .core {
+  transition: fill 0.3s linear 0s;
+}
+
+.like-icon.is-liked .main-body {
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked.heart {
+  animation: 0.3s ease-in 0.1s 1 normal both running heart, 0.3s ease-in 0.3s 1 normal both running sparks-fade;
+}
+
+.sparks {
+  color: var(--animation-fill-color);
+  background-color: var(--animation-fill-color);
+  opacity: var(--sparks-opacity);
 }
 
 
