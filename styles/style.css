@@ -23,7 +23,7 @@
 
 .header {
   width: var(--card-width);
-  min-height: 368px;
+  min-height: clamp(327px, 312.56px + 3.85vw, 368px);
   background-color: var(--card-background-color);
   margin: 97px auto;
   font-family: var(--accent-font-family);
@@ -35,7 +35,7 @@
 
 .hero {
   font-size: var(--logo-size);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hero__subtitle {
@@ -45,7 +45,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 51px;
+  gap: 52px;
   justify-items: center;
 }
 
@@ -59,9 +59,8 @@
   position: relative;
 }
 
-
 .card-title {
-  padding: 5px 10px;
+  padding: 4px 10px;
   font-size: 18px;
 }
 
@@ -75,7 +74,7 @@
 }
 
 .card-image-container::before {
-  content: "</HTML>";
+  content: '</HTML>';
   position: absolute;
   top: 55px;
   right: 25px;
@@ -85,27 +84,25 @@
   font-size: 14px;
   font-family: var(--accent-font-family);
   text-shadow:
-  -1px 0 rgba(var(--card-background-color-rgb), 0.5),
-  0 1px rgba(var(--card-background-color-rgb), 0.5),
-  1px 0 rgba(var(--card-background-color-rgb), 0.5),
-  0 -1px rgba(var(--card-background-color-rgb), 0.5);
+    -1px 0 rgba(var(--card-background-color-rgb), 0.5),
+    0 1px rgba(var(--card-background-color-rgb), 0.5),
+    1px 0 rgba(var(--card-background-color-rgb), 0.5),
+    0 -1px rgba(var(--card-background-color-rgb), 0.5);
 }
-
-
 
 .card-text {
   font-size: 18px;
-  padding: 25px;
+  padding: 24px 25px 1px 25px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 26px;
-  padding-bottom: 0;
+  gap: 28px;
+  line-height: 1.13;
 }
 
 .card-footer {
   display: grid;
   grid-template-columns: 1fr min-content;
-  padding: 23px 25px;
+  padding: 21px 23px;
   background-color: var(--card-background-color);
 }
 
@@ -194,7 +191,9 @@
 }
 
 .like-icon.is-liked.heart {
-  animation: 0.3s ease-in 0.1s 1 normal both running heart, 0.3s ease-in 0.3s 1 normal both running sparks-fade;
+  animation:
+    0.3s ease-in 0.1s 1 normal both running heart,
+    0.3s ease-in 0.3s 1 normal both running sparks-fade;
 }
 
 .sparks {
@@ -202,7 +201,6 @@
   background-color: var(--animation-fill-color);
   opacity: var(--sparks-opacity);
 }
-
 
 .like {
   width: 130px;
@@ -214,6 +212,10 @@
   letter-spacing: 0;
   padding: 0;
   font-size: 14px;
+  max-block-size: 36px;
+  position: relative;
+  top: 4px;
+  right: 2px;
 }
 
 .footer {
@@ -229,7 +231,7 @@
   font-family: var(--accent-font-family);
   font-size: 14px;
   padding: 15px 20px;
-  line-height: 0.9;
+  line-height: 0.95;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -333,14 +335,15 @@
   color: var(--card-color);
 }
 
-.button-animation:focus-visible, .button-animation:focus {
+.button-animation:focus-visible,
+.button-animation:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
   transition: box-shadow 0.3s ease;
 }
 
 .button-animation::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -377,18 +380,15 @@
   .card-text {
     font-variation-settings: 'wght' var(--main-font-weight);
   }
-
-
 }
 
-@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
 
   .card-image-container::before {
     text-shadow: none;
     -webkit-text-stroke: 1px rgb(var(--card-background-color-rgb), 0.5);
     text-stroke: 1px rgb(var(--card-background-color-rgb), 0.5);
   }
-
 }
 
 @media (width <= 375.2px) {

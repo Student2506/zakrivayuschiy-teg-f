@@ -11,6 +11,7 @@
 */
 
 @keyframes heart {
+
   0% {
     scale: 1;
   }
@@ -25,15 +26,16 @@
 }
 
 @keyframes sparks-fade {
+
   0% {
-    --sparks-opacity: 0.0;
+    --sparks-opacity: 0;
   }
 
   50% {
-    --sparks-opacity: 1.0;
+    --sparks-opacity: 1;
   }
 
   100% {
-    --sparks-opacity: 0.0;
+    --sparks-opacity: 0;
   }
 }
