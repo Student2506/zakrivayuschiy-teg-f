@@ -45,6 +45,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
   gap: 49px;
   justify-items: center;
 }
@@ -220,10 +221,12 @@
 
 .footer {
   width: var(--card-width);
-  margin: 50px auto;
+  padding: 50px 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -49px;
+  border: none;
 }
 
 .footer__button {
