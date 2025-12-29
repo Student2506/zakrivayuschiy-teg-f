@@ -289,7 +289,7 @@
 }
 
 .filter-half-bright {
-  filter: brightness(50%);
+  filter: brightness(50%) contrast(20%);
 }
 
 .filter-low-contrast {
@@ -297,7 +297,7 @@
 }
 
 .filter-high-contrast {
-  filter: contrast(160%);
+  filter: contrast(160%) blur(3.2rem);
 }
 
 .filter-blur {
