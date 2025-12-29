@@ -119,14 +119,6 @@
   background-color: var(--card-background-color);
 }
 
-.like-icon {
-  width: 39px;
-  outline-offset: 2px;
-  transition:
-    outline 0.3s ease,
-    outline-offset 0.3s ease;
-  outline: 2px solid transparent;
-}
 
 .card__icon-button:focus {
   outline: none;
@@ -155,6 +147,15 @@
 .core {
   transition-delay: 0.03s;
   fill: var(--heart-core-color);
+}
+
+.like-icon {
+  width: 39px;
+  outline-offset: 2px;
+  transition:
+    outline 0.3s ease,
+    outline-offset 0.3s ease;
+  outline: 2px solid transparent;
 }
 
 .like-icon:hover {
