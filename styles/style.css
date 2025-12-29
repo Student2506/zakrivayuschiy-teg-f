@@ -96,7 +96,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 28px;
-  line-height: 1.13;
+  line-height: 21px;
 }
 
 .card-footer {
@@ -398,7 +398,12 @@
   }
 
   .header {
-    margin: 100px 0;
+    margin: 140px 0 100px;
     width: 375px;
   }
+
+  .footer__button {
+    flex-direction: column;
+  }
+
 }
