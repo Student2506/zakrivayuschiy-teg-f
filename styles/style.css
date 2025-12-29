@@ -288,16 +288,8 @@
   filter: brightness(200%);
 }
 
-.filter-half-bright {
-  filter: brightness(50%) contrast(20%);
-}
-
 .filter-low-contrast {
   filter: contrast(20%);
-}
-
-.filter-high-contrast {
-  filter: contrast(160%) blur(3.2rem);
 }
 
 .filter-blur {
@@ -324,9 +316,6 @@
   filter: hue-rotate(-90deg);
 }
 
-.filter-hue-rotate-low-contrast {
-  filter: hue-rotate(-90deg) contrast(20%);
-}
 
 .button-animation {
   position: relative;
