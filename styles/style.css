@@ -358,6 +358,10 @@
   mix-blend-mode: difference;
 }
 
+.button__text_uppercase {
+  text-transform: uppercase;
+}
+
 @supports (font-variation-settings: 'wght' 410) {
 
   .page {
