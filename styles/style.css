@@ -45,7 +45,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 52px;
+  gap: 49px;
   justify-items: center;
 }
 
