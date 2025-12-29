@@ -14,7 +14,7 @@
   --logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-vertical-padding: clamp(122px, 119.18px + 0.75vw, 130px);
-  --header-horizontal-padding: clamp(16px, -21.50px + 10.00vw, 122.5px);
+  --header-horizontal-padding: clamp(16px, -21.5px + 10vw, 122.5px);
   --card-background-color: #fff;
   --card-color: #000;
   --card-color-rgb: 0, 0, 0;
