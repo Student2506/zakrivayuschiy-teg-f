@@ -400,5 +400,8 @@
     flex-direction: column;
   }
 
+  .footer__button__image {
+    width: 28px;
+  }
 
 }
