@@ -393,11 +393,19 @@
   }
 
   .header {
-    margin: 140px 0 100px;
+    margin: 100px 0 100px;
     width: 375px;
   }
 
   .footer__button {
     flex-direction: column;
+  }
+
+  .main {
+    grid-template-rows: min-content;
+  }
+
+  .card {
+    grid-template-rows: repeat(3, min-content);
   }
 }
