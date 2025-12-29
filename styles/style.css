@@ -243,7 +243,6 @@
 .dialog[open] {
   display: flex;
   flex-direction: column;
-  height: 191px;
   width: 384.5px;
   padding: 28px 30px;
   gap: 30px;
