@@ -94,6 +94,7 @@
     0 1px rgba(var(--card-background-color-rgb), 0.5),
     1px 0 rgba(var(--card-background-color-rgb), 0.5),
     0 -1px rgba(var(--card-background-color-rgb), 0.5);
+  mix-blend-mode: hard-light;
 }
 
 .card-text {
@@ -123,6 +124,10 @@
   background-color: var(--card-background-color);
 }
 
+.card__icon-button {
+  transition: outline 0.3s ease;
+}
+
 .card__icon-button:focus {
   outline: none;
   border: none;
@@ -130,7 +135,6 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  transition: outline 0.3s ease;
 }
 
 .contour {
@@ -278,13 +282,13 @@
   isolation: isolate;
   background-color: var(--card-background-color);
   color: var(--card-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus-visible,
 .button:focus {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -374,7 +378,7 @@
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
 
-  .card-image-container::before {
+  .card-image-container__text {
     text-shadow: none;
     -webkit-text-stroke: 1px rgb(var(--card-background-color-rgb), 0.5);
     text-stroke: 1px rgb(var(--card-background-color-rgb), 0.5);
