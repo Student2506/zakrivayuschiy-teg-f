@@ -111,21 +111,23 @@
   grid-template-columns: 1fr min-content;
   padding: 21px 23px;
   background-color: var(--card-background-color);
+  min-block-size: 88px;
 }
 
 .heart-button {
-  margin-top: 3px;
-  padding-right: 8px;
+  margin-block-start: 4px;
+  padding: 0;
   justify-self: right;
-  width: fit-content;
-  height: fit-content;
-  display: inline-block;
+  width: 38px;
+  height: 38px;
+  display: flex;
   border: none;
   background-color: var(--card-background-color);
-}
-
-.card__icon-button {
+  align-items: center;
+  justify-items: start;
   transition: outline 0.3s ease;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
 }
 
 .card__icon-button:focus {
@@ -152,12 +154,11 @@
 }
 
 .like-icon {
-  width: 39px;
-  outline-offset: 2px;
-  transition:
-    outline 0.3s ease,
-    outline-offset 0.3s ease;
+  height: 36px;
+  width: 36px;
   outline: 2px solid transparent;
+  align-self: center;
+  justify-self: self-start;
 }
 
 .like-icon:hover {
@@ -226,9 +227,10 @@
 .like {
   width: 130px;
   padding: 0;
-  max-block-size: 36px;
+  max-block-size: 38px;
   top: 4px;
   right: 2px;
+  margin-inline-start: 10px;
 }
 
 .footer {
