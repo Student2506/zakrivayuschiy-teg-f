@@ -222,7 +222,7 @@
   opacity: var(--sparks-opacity);
 }
 
-.like {
+.card__like-button {
   width: 130px;
   padding: 0;
   max-block-size: 38px;
