@@ -124,10 +124,12 @@
   border: none;
   background-color: var(--card-background-color);
   align-items: center;
-  justify-items: start;
+  justify-items: center;
   transition: outline 0.3s ease;
   outline: 2px solid transparent;
   outline-offset: -2px;
+  padding-inline-start: 1px;
+  padding-block-start: 2px;
 }
 
 .card__icon-button:focus {
@@ -157,8 +159,6 @@
   height: 36px;
   width: 36px;
   outline: 2px solid transparent;
-  align-self: center;
-  justify-self: self-start;
 }
 
 .like-icon:hover {
